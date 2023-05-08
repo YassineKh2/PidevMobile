@@ -83,7 +83,7 @@ public class BaseForm extends Form {
         ));
         
         tb.addMaterialCommandToSideMenu("Shop", FontImage.MATERIAL_SHOP, e -> new ListCategorie(res).show());
-        tb.addMaterialCommandToSideMenu("Formation", FontImage.MATERIAL_ADD_TASK, e -> new ProfileForm(res).show());
+        tb.addMaterialCommandToSideMenu("Formation", FontImage.MATERIAL_ADD_TASK, e -> new ListFormations(res).show());
         tb.addMaterialCommandToSideMenu("Logout", FontImage.MATERIAL_EXIT_TO_APP, e -> new WalkthruForm(res).show());
     }
 }
