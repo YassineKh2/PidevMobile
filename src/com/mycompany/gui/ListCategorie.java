@@ -236,7 +236,7 @@ public class ListCategorie extends BaseForm{
          Label LShow = new Label(" ");
            LShow.setUIID("NewsTopLine");
            Style updateShow = new Style(LShow.getUnselectedStyle());
-           updateShow.setFgColor(0xf7ad02);
+            updateShow.setFgColor(0x4daea7);
            
            FontImage mFontImage = FontImage.createMaterial(FontImage.MATERIAL_INFO,updateShow);
            LShow.setIcon(mFontImage);
