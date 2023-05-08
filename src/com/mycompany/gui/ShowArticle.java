@@ -203,7 +203,8 @@ public class ShowArticle extends BaseForm{
                
         );
                 
-        add(content);       
+        add(content);   
+        super.addSideMenu(res);
          show();
     }
         

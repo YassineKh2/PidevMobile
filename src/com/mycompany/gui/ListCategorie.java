@@ -51,7 +51,6 @@ public class ListCategorie extends BaseForm{
          super("Newsfeed", BoxLayout.y());
           
         Toolbar tb = new Toolbar(true);
-
         current = this;
         setToolbar(tb);
 
@@ -159,7 +158,7 @@ public class ListCategorie extends BaseForm{
             
             image.setBackgroundType(Style.BACKGROUND_IMAGE_SCALED_FILL);
         }
-
+        super.addSideMenu(res);
     }
 
     private void addStringValue(String name, Component comp) {

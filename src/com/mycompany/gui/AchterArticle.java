@@ -233,6 +233,7 @@ public class AchterArticle extends BaseForm {
         }
 
         show();
+        super.addSideMenu(res);
     }
 
     private void addStringValue(String name, Component comp) {

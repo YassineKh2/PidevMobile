@@ -161,7 +161,7 @@ public class ListArticle extends BaseForm{
             
             image.setBackgroundType(Style.BACKGROUND_IMAGE_SCALED_FILL);
         
-
+            super.addSideMenu(res);
     }
 
     private void addStringValue(String name, Component comp) {
