@@ -4,7 +4,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/services/ServiceCentre.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/SignUpForm.java</file>
+            <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/CentreViewForm.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/ActivateForm.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/services/PublicationService.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/AjoutFormation.java</file>
@@ -13,11 +15,14 @@
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/services/ServiceFormation.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/ListFormations.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/BaseForm.java</file>
+            <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/CentreForm.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/ListPubFront.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/WalkthruForm.java</file>
+            <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/entities/Centre.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/entities/Formation.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/services/ServiceFormateur.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/AchterArticle.java</file>
+            <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/CentreEditForm.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/CleanModern.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/gui/ShowArticle.java</file>
             <file>file:/C:/Users/yassine/Desktop/9raya/Pidev/PidevMobileV2/src/com/mycompany/myapp/MyApplication.java</file>

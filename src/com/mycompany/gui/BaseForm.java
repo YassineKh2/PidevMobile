@@ -87,5 +87,6 @@ public class BaseForm extends Form {
         tb.addMaterialCommandToSideMenu("Shop", FontImage.MATERIAL_SHOP, e -> new ListCategorie(res).show());
         tb.addMaterialCommandToSideMenu("Formation", FontImage.MATERIAL_ADD_TASK, e -> new ListFormations(res).show());
         tb.addMaterialCommandToSideMenu("Forum", FontImage.MATERIAL_FORUM, e -> new ListPubFront(current,res).show());
+        tb.addMaterialCommandToSideMenu("Centres", FontImage.MATERIAL_CALL, e -> new CentreViewForm(res).show());
     }
 }
