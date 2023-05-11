@@ -40,16 +40,16 @@ import com.codename1.ui.util.Resources;
  *
  * @author Shai Almog
  */
-public class BaseForm extends Form {
+public class BaseFormBack extends Form {
     Form current;
-    public BaseForm() {
+    public BaseFormBack() {
     }
 
-    public BaseForm(Layout contentPaneLayout) {
+    public BaseFormBack(Layout contentPaneLayout) {
         super(contentPaneLayout);
     }
 
-    public BaseForm(String title, Layout contentPaneLayout) {
+    public BaseFormBack(String title, Layout contentPaneLayout) {
         super(title, contentPaneLayout);
     }
     
@@ -84,7 +84,8 @@ public class BaseForm extends Form {
                         new Label(res.getImage("profile-pic.jpg"), "PictureWhiteBackgrond"))
         ));
         setLayout(BoxLayout.y());
-        tb.addMaterialCommandToSideMenu("Shop", FontImage.MATERIAL_SHOP, e -> new ListCategorie(res).show());
-        tb.addMaterialCommandToSideMenu("Forum", FontImage.MATERIAL_FORUM, e -> new ListPubFront(current,res).show());
+        tb.addMaterialCommandToSideMenu("Shop", FontImage.MATERIAL_SHOP, e -> new AddCategorieForum(res).show());
+        tb.addMaterialCommandToSideMenu("Formation", FontImage.MATERIAL_ADD_TASK, e -> new ListFormations(res).show());
+        tb.addMaterialCommandToSideMenu("Centres", FontImage.MATERIAL_CALL, e -> new CentreViewForm(res).show());
     }
 }

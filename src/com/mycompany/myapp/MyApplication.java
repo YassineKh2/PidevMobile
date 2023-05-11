@@ -17,6 +17,7 @@ import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.io.NetworkEvent;
 import com.mycompany.gui.AddCategorieForum;
 import com.mycompany.gui.ListCategorie;
+import com.mycompany.gui.ListFormations;
 import com.mycompany.gui.NewsfeedForm;
 import com.mycompany.gui.WalkthruForm;
 

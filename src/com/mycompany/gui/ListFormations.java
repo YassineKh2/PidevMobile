@@ -10,12 +10,15 @@ import com.codename1.components.SpanLabel;
 import com.codename1.ui.Button;
 import com.codename1.ui.ButtonGroup;
 import com.codename1.ui.Component;
+import static com.codename1.ui.Component.BOTTOM;
+import static com.codename1.ui.Component.CENTER;
 import com.codename1.ui.Container;
 import com.codename1.ui.Dialog;
 import com.codename1.ui.Display;
 import com.codename1.ui.EncodedImage;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
+import com.codename1.ui.Graphics;
 import com.codename1.ui.Image;
 import com.codename1.ui.Label;
 import com.codename1.ui.RadioButton;
@@ -40,7 +43,7 @@ import java.util.ArrayList;
  *
  * @author MsiAs
  */
-public class ListFormations extends BaseForm{
+public class ListFormations extends BaseFormBack{
     Form current;
     public ListFormations(Resources res){
     super("NewsfeedForm", BoxLayout.y());
@@ -62,11 +65,45 @@ public class ListFormations extends BaseForm{
         Label s2 = new Label();
         
         
-        
+         addTab(swipe,s1,res.getImage("Add tasks-bro.png"),",","",res);  
+         
         swipe.setUIID("Container");
         swipe.getContentPane().setUIID("Container");
         swipe.hideTabs();
         
+         ButtonGroup bg = new ButtonGroup();
+        int size = Display.getInstance().convertToPixels(1);
+        Image unselectedWalkthru = Image.createImage(size, size, 0);
+        Graphics g = unselectedWalkthru.getGraphics();
+        g.setColor(0xffffff);
+        g.setAlpha(100);
+        g.setAntiAliased(true);
+        g.fillArc(0, 0, size, size, 0, 360);
+        Image selectedWalkthru = Image.createImage(size, size, 0);
+        g = selectedWalkthru.getGraphics();
+        g.setColor(0xffffff);
+        g.setAntiAliased(true);
+        g.fillArc(0, 0, size, size, 0, 360);
+        RadioButton[] rbs = new RadioButton[swipe.getTabCount()];
+        FlowLayout flow = new FlowLayout(CENTER);
+        flow.setValign(BOTTOM);
+        Container radioContainer = new Container(flow);
+        for (int iter = 0; iter < rbs.length; iter++) {
+            rbs[iter] = RadioButton.createToggle(unselectedWalkthru, bg);
+            rbs[iter].setPressedIcon(selectedWalkthru);
+            rbs[iter].setUIID("Label");
+            radioContainer.add(rbs[iter]);
+        }
+
+        rbs[0].setSelected(true);
+        swipe.addSelectionListener((i, ii) -> {
+            if (!rbs[ii].isSelected()) {
+                rbs[ii].setSelected(true);
+            }
+        });
+
+        Component.setSameSize(radioContainer, s1, s2);
+        add(LayeredLayout.encloseIn(swipe, radioContainer));
         ButtonGroup barGroup = new ButtonGroup();
         RadioButton mesListes = RadioButton.createToggle("Mes Formations", barGroup);
         mesListes.setUIID("SelectBar");
@@ -136,7 +173,7 @@ public class ListFormations extends BaseForm{
 
     
 
-    
+    super.addSideMenu(res);
 
     }
     
@@ -188,7 +225,7 @@ public class ListFormations extends BaseForm{
                             )
                     );
 
-            swipe.addTab("",res.getImage("news-tab-down-arrow.png"), page1);
+            swipe.addTab("",res.getImage("Add tasks-bro.png"), page1);
 
             }
     private void addButton(Image img,Formation rec , Resources res) {

@@ -21,7 +21,7 @@ import com.mycompany.services.ServicesCategorie;
  *
  * @author yassine
  */
-public class ModifyCategorieForm extends BaseForm{
+public class ModifyCategorieForm extends BaseFormBack{
     
     Form current;
     public ModifyCategorieForm(Resources res, Categorie c){

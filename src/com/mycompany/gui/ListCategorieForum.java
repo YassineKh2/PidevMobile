@@ -43,7 +43,7 @@ import java.util.ArrayList;
  *
  * @author yassine
  */
-public class ListCategorieForum extends BaseForm {
+public class ListCategorieForum extends BaseFormBack {
 
     Form current;
 
